@@ -1,4 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+app-root::after {
+  content: "";
+  background-image: url(./assets/background.jpg);
+  background-size: cover;
+  top: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.2;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Roboto+Condensed|Roboto+Mono|Roboto+Slab|Roboto:100&display=swap");

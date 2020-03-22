@@ -1,0 +1,26 @@
+:host {
+  width: 100%;
+}
+
+a {
+  color: inherit;
+
+  &[href*="twitter"] fa-icon {
+    color: #1da1f2;
+  }
+
+  &[href*="github"] fa-icon {
+    color: #333;
+  }
+
+  &[href*="instagram"] fa-icon {
+    color: #fd5949;
+  }
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 30%;
+  margin-left: 30%;
+}
