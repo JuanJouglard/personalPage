@@ -1,51 +1,9 @@
-.profile-pic {
-  max-width: 20%;
-  border-radius: 50%;
-  transform-origin: 40% 50%;
-  min-width: 200px;
-}
-
-.profile-container {
-  width: 100%;
-  height: 80vh;
-  justify-content: space-between;
-  margin-top: 1vh;
-  margin-bottom: 1%;
+.home-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
 
-  * {
-    margin: 0 0;
-  }
-}
-
-.profile-name {
-  font-family: "Roboto Slab", serif;
-  font-size: 7vw;
-}
-
-.profile-role {
-  font-size: 6vw;
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
-  background-color: yellow;
-  padding: 0 10px;
-}
-
-@media screen and (min-width: 400px) {
-  .profile-name {
-    font-size: 6vw;
-  }
-  .profile-role {
-    font-size: 4vw;
-  }
-}
-@media screen and (min-width: 750px) {
-  .profile-name {
-    font-size: 4vw;
-  }
-  .profile-role {
-    font-size: 3vw;
+  .profile-description {
+    flex-basis: 75%;
+    margin-top: 6vh;
   }
 }

@@ -1,0 +1,88 @@
+.container {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: [line1] 70vh [line2]auto [line3] auto [line4];
+
+  .router-container {
+    grid-row: line3/line4;
+  }
+
+  .profile-container {
+    grid-row: line1/line2;
+  }
+
+  .nav-bar {
+    grid-row: line2/line3;
+  }
+  @media screen and (min-width: 768px) {
+    grid-template-columns: [col1] 25% [col2] 75% [col3];
+    grid-template-rows: [row1] 10vh [row2] 90vh [row3];
+    flex-direction: row;
+
+    .nav-bar {
+      grid-column-start: span 2;
+      grid-row: row1 / row1;
+    }
+
+    .profile-container {
+      grid-column-start: span 1;
+      grid-row: row2 / row3;
+    }
+
+    .router-container {
+      grid-column-start: span 1;
+      grid-row: row2 / row3;
+    }
+  }
+}
+
+.profile-pic {
+  max-width: 20%;
+  border-radius: 50%;
+  transform-origin: 40% 50%;
+  min-width: 200px;
+}
+.profile-container {
+  justify-content: flex-start;
+  margin-top: 1vh;
+  margin-bottom: 1%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+
+  * {
+    margin: 0 0 5vh;
+  }
+}
+
+.profile-name {
+  font-family: "Roboto Slab", serif;
+  font-size: 7vw;
+}
+
+.profile-role {
+  font-size: 5vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  background-color: yellow;
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 400px) {
+  .profile-name {
+    font-size: 6vw;
+  }
+  .profile-role {
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 750px) {
+  .profile-name {
+    font-size: 1.2em;
+  }
+  .profile-role {
+    font-size: 1em;
+  }
+}

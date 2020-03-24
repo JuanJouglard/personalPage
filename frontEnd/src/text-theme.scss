@@ -1,0 +1,44 @@
+@import "~@angular/material/theming";
+
+// Define a mixin that accepts a theme and outputs the theme-specific styles.
+@mixin text-theme($theme) {
+  // Extract the palettes you need from the theme definition.
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  // Define any styles affected by the theme.
+  p,
+  span,
+  b,
+  i {
+    // Use mat-color to extract individual colors from a palette.
+    color: mat-color($primary);
+  }
+
+  h1,
+  h2,
+  h3,
+  a {
+    color: mat-color($primary, 900);
+  }
+
+  p {
+    a {
+      background-color: mat-color($accent);
+      color: initial;
+
+      &:active {
+        background-color: mat-color($accent, 900);
+      }
+    }
+  }
+  a,
+  a:active,
+  a:focus {
+    outline: none; /* Works in Firefox, Chrome, IE8 and above */
+  }
+
+  body {
+    background-color: mat-color($accent, 100);
+  }
+}

@@ -9,16 +9,9 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-app-root::after {
-  content: "";
-  background-image: url(./assets/background.jpg);
-  background-size: cover;
-  top: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.2;
-}
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono|Roboto+Slab|Roboto:300&display=swap");
 
-@import url("https://fonts.googleapis.com/css?family=Merriweather|Roboto+Condensed|Roboto+Mono|Roboto+Slab|Roboto:100&display=swap");
+.mat-tab-header,
+.mat-tab-nav-bar {
+  border-bottom-width: 0;
+}

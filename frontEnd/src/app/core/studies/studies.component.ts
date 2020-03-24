@@ -2,13 +2,13 @@ import { Component, OnInit } from "@angular/core";
 import { fadeInAnimation } from "../../shared/animations/route-animation";
 
 @Component({
-  selector: "home",
-  templateUrl: "./home.component.html",
-  styleUrls: ["./home.component.scss"]
+  selector: "app-studies",
+  templateUrl: "./studies.component.html",
+  styleUrls: ["./studies.component.scss"]
   /* animations: [fadeInAnimation],
   host: { "[@fadeInAnimation]": "" } */
 })
-export class HomeComponent implements OnInit {
+export class StudiesComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
